@@ -1,22 +1,25 @@
 plugins {
     id 'scala'
+    id 'application'
     id 'io.quarkus'
 }
 
+//mainClassName = "com.acme.ExampleResource"
+
 repositories {
-     mavenLocal()
-     mavenCentral()
+    mavenLocal()
+    mavenCentral()
 }
 
 dependencies {
+    implementation 'io.quarkus:quarkus-resteasy-jackson'
     implementation 'io.quarkus:quarkus-scala'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'org.scala-lang:scala-library:2.12.8'
-    implementation 'io.quarkus:quarkus-resteasy'
-
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
 }
+
 
 group 'org.acme'
 version '1.0.0-SNAPSHOT'

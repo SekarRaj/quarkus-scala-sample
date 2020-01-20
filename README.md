@@ -1,4 +1,4 @@
-# code-with-quarkus project
+# quarkus-scala-sample project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
