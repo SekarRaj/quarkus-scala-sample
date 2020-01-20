@@ -4,7 +4,7 @@ plugins {
     id 'io.quarkus'
 }
 
-//mainClassName = "com.acme.ExampleResource"
+mainClassName = "com.acme.ExampleResource"
 
 repositories {
     mavenLocal()

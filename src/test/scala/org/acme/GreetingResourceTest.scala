@@ -11,9 +11,9 @@ class GreetingResourceTest {
   @Test
   def testGreetingEndpoint(): Unit = {
     given()
-      .`when`().get("/hello/greeting/sappa")
+      .`when`().get("/hello/greeting/minions")
       .`then`()
       .statusCode(200)
-      .body(`is`("Hello, sappa"))
+      .body(`is`("Hello, minions"))
   }
 }

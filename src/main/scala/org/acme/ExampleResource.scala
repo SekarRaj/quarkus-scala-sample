@@ -3,7 +3,7 @@ package org.acme
 import javax.ws.rs.{GET, Path, Produces}
 import javax.ws.rs.core.MediaType
 
-@Path("/hello")
+@Path("/obsolete")
 class ExampleResource {
 
     @GET
